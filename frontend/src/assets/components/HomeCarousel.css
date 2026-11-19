@@ -1,0 +1,44 @@
+.hero-img {
+  height: 70vh;
+  min-height: 360px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 65%);
+}
+
+.hero-caption {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 480px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-tile {
+  min-height: 180px;
+  transition: transform 0.2s ease;
+}
+
+.category-tile:hover {
+  transform: translateY(-3px);
+}
